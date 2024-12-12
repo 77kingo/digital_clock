@@ -1,0 +1,53 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Clock Container */
+  .clock-container {
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Digital Clock Style */
+  #digital-clock {
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), 0 0 20px #6dd5ed, 0 0 30px #6dd5ed, 0 0 40px #6dd5ed; }
+    to { text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4), 0 0 30px #2193b0, 0 0 40px #2193b0, 0 0 50px #2193b0; }
+  }
+  
+  /* Date Style */
+  #date {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out;
+  }
+  
